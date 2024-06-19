@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body class="bg-primary bg-opacity-25">
+
+    <section class="container my-5 text-center">
+
+        <div id="app">
+
+              <div class="row">
+
+                <div class="col-md-4 my-3">
+                    
+            <div class="card shadow" style="width: 18rem;">
+                <img class="card-img-top" :src="image" :alt="`${firstName}  ${lastName}`" >
+                <div class="card-body">
+                <h4 class="fw-normal">Name: {{ firstName }} {{ lastName }}</h4>
+                <p>Email: {{ email }}</p>
+                <button @click="getUser()" class="btn btn-outline-dark">Get random user</button>
+                  
+                </div>
+            </div>
+                </div>
+
+                <div class="col-md-8 my-auto">
+                    <h1 class="text-muted">ABOUT PROJECT</h1>
+                    <p class="text-muted"> <strong class="bg-warning">Hello, my name is Cyprian Nwaerema, </strong> and this project is a Vuejs project that generates random users on the left hand card using the <a href="https://randomuser.me/api/">ramdon user</a> api.
+                    Click the button to generate users.</p>
+
+                    <p class="text-muted">It is a fun project i created as a Backend Laravel developer using Vuejs on the frontend. Which obviously makes me a fullstack developer.</p>
+                </div>
+
+              </div>
+
+           
+        </div>
+    </section>
+    
+
+
+
+<!-- script  -->
+<script src="vue3.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
